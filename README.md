@@ -1,10 +1,11 @@
 # Tasks
 
 App Icon
-![alt text](https://imgur.com/uBvMHHy)
+![40141576_678973955821669_1049977056986660864_n](https://user-images.githubusercontent.com/22837318/44685271-60512580-aa4b-11e8-9732-97bffa9c9a18.jpg)
 
 TableView
-![alt text](https://imgur.com/2v4rEiV)
+![40310629_519472665182094_9172715637787590656_n](https://user-images.githubusercontent.com/22837318/44685273-62b37f80-aa4b-11e8-8ef9-82ecd4bb5540.png)
 
 DetailView
-![alt text](https://imgur.com/JsQ7EMK)
+![40211777_533114333785287_1321464585466675200_n](https://user-images.githubusercontent.com/22837318/44685281-65ae7000-aa4b-11e8-9ad2-a751f25e35a3.png)
+
