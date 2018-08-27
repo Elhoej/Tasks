@@ -37,10 +37,23 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
         view.backgroundColor = Appearance.backgroundColor
+        
+        setupNavBar()
+        setupTableView()
+    }
+    
+    private func setupTableView()
+    {
         tableView.backgroundColor = Appearance.backgroundColor
         tableView.tableHeaderView?.backgroundColor = UIColor.rgb(red: 36, green: 36, blue: 36)
         tableView.separatorInset = .zero
+        tableView.allowsMultipleSelection = false
+    }
+    
+    private func setupNavBar()
+    {
         let navigationImageView = UIImageView(image: #imageLiteral(resourceName: "tasks-logo").withRenderingMode(.alwaysTemplate))
         navigationImageView.contentMode = .scaleAspectFit
         navigationImageView.tintColor = .white
@@ -140,6 +153,8 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
         
         cell.titleLabel.text = task.name
         cell.noteLabel.text = task.notes
+        cell.backgroundColor = cell.isSelected ? Appearance.myBlueColor : Appearance.backgroundColor
+        cell.backgroundColor = cell.isHighlighted ? Appearance.myBlueColor : Appearance.backgroundColor
         
         return cell
     }
